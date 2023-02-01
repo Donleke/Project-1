@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Karla", sans-serif;
+  list-style: none;
+}
+
+:root {
+  --DarkViolet: hsl(256, 26%, 20%);
+  --GrayishBlue: hsl(216, 30%, 68%);
+  --VeryDarkViolet: hsl(270, 9%, 17%);
+  --DarkGrayishViolet: hsl(273, 4%, 51%);
+  --VeryLightGray: hsl(0, 0%, 98%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "DM Serif Display", serif;
+}
+
+p {
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+nav {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav div {
+  margin-left: 10px;
+}
+
+nav div a {
+  color: var(--DarkGrayishViolet);
+  margin-right: 20px;
+  text-transform: uppercase;
+}
+
+nav div button {
+  color: var(--DarkViolet);
+  border: 2px solid var(--DarkViolet);
+  padding: 10px 15px;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+
+.btn {
+  background-color: transparent;
+  border: 2px solid #fff;
+  padding: 15px 25px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+body {
+  margin: 0 auto;
+}
+
+h1,
+h2 {
+  /* font-size: 64px; */
+  font-size: 48px;
+  list-style: 1;
+  letter-spacing: 2px;
+  position: relative;
+  padding-top: 50px;
+}
+
+.line-top::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1px;
+  width: 150px;
+  background-color: #fff;
+}
+
+.line-violet::before {
+  background-color: var(--DarkViolet);
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.hero {
+  background-color: var(--DarkViolet);
+  color: #fff;
+  padding: 20px;
+  position: relative;
+  margin-bottom: 250px;
+}
+
+.hero p {
+  margin-bottom: 50px;
+}
+
+.hero::after {
+  content: "";
+  background-image: url("./images/bg-pattern-intro-right-desktop.svg");
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: -5%;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.hero::before {
+  content: "";
+  background-image: url("./images/bg-pattern-intro-left-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: -50%;
+  left: 0;
+}
+
+.hero .container {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.container .content-wrapper {
+  margin-right: 50px;
+}
+
+.hero-img {
+  margin-bottom: -200px;
+}
+
+.dif-title {
+  margin-bottom: 50px;
+}
+
+.different .container .card-container {
+  display: flex;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.card h3 {
+  margin-bottom: 30px;
+}
+
+.find {
+  position: relative;
+  margin: 100px auto;
+}
+
+.find .container {
+  background-color: var(--DarkViolet);
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.find .container h2 {
+  font-size: 48px;
+  padding: 0;
+  color: #fff;
+  width: 50%;
+}
+
+.bg::before {
+  content: "";
+  background-image: url("./images/bg-pattern-how-we-work-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  /* background-size: 50% 100%; */
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  right: 90px;
+}
+
+footer {
+  background-color: var(--VeryLightGray);
+  position: relative;
+}
+footer .container {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+}
+
+footer .container .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+footer .bottom {
+  margin-right: 200px;
+}
+
+footer .bottom h4 a {
+  color: var(--DarkGrayishViolet);
+
+  /* text-transform: uppercase; */
+}
+
+footer .bottom div h4 {
+  margin-bottom: 30px;
+}
+
+footer li {
+  padding: 0;
+  margin-bottom: 10px;
+}
+footer li a {
+  text-transform: uppercase;
+  color: var(--DarkViolet);
+}
+
+footer .container .bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .flex {
+  display: flex;
+  justify-content: space-between;
+}
+.container .flex .card {
+  width: 300px;
+}
+
+.hr {
+  padding: 20px;
+  border-bottom: 1px solid var(--GrayishBlue);
+}
+
+.social-links a {
+  margin-left: 15px;
+}
+
+footer::before {
+  content: "";
+  background-image: url("./images/bg-pattern-footer-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  right: 90px;
+}
